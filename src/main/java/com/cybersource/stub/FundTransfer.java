@@ -1,0 +1,141 @@
+
+package com.cybersource.stub;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for FundTransfer complex type</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * 
+ * <pre>{@code
+ * <complexType name="FundTransfer">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="accountNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="accountName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="bankCheckDigit" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="iban" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "FundTransfer", propOrder = {
+    "accountNumber",
+    "accountName",
+    "bankCheckDigit",
+    "iban"
+})
+public class FundTransfer {
+
+    protected String accountNumber;
+    protected String accountName;
+    protected String bankCheckDigit;
+    protected String iban;
+
+    /**
+     * Gets the value of the accountNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    /**
+     * Sets the value of the accountNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAccountNumber(String value) {
+        this.accountNumber = value;
+    }
+
+    /**
+     * Gets the value of the accountName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAccountName() {
+        return accountName;
+    }
+
+    /**
+     * Sets the value of the accountName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAccountName(String value) {
+        this.accountName = value;
+    }
+
+    /**
+     * Gets the value of the bankCheckDigit property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getBankCheckDigit() {
+        return bankCheckDigit;
+    }
+
+    /**
+     * Sets the value of the bankCheckDigit property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setBankCheckDigit(String value) {
+        this.bankCheckDigit = value;
+    }
+
+    /**
+     * Gets the value of the iban property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIban() {
+        return iban;
+    }
+
+    /**
+     * Sets the value of the iban property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIban(String value) {
+        this.iban = value;
+    }
+
+}
